@@ -46,7 +46,6 @@ class Progressbar {
         $this->bar  = substr($this->bar, 0, strlen($this->bar) - 1) . ">";
         $this->bar .= str_repeat(" ", 100 - $this->perc) . "] - $this->_viewperc% - $progress/$this->total-";
         return $this->bar;
-
     }
 
     public function updateBar($progress)

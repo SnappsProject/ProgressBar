@@ -3,9 +3,7 @@ Php - Terminal Progressbar
 
 Example usage:
 <pre>
-
 require_once('Progressbar.php');
-
 $total = 30; //total instrunctions
 $bar = new SnappsProject\Progressbar($total);
 for ($n=1; $n <= $total; $n++) {

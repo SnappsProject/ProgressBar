@@ -54,11 +54,9 @@ class Progressbar {
 
     public function updateBar($progress)
     {
+        printf("%s\r",$this->makeBar($progress));
         if($progress == $this->total) {
-            printf("%s\r",$this->makeBar($progress));
             printf("\n");
-        } else {
-            printf("%s\r",$this->makeBar($progress));
         }
     }
 }

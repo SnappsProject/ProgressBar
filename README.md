@@ -1,5 +1,5 @@
 # SnappsProject/Progressbar
-Php - Terminal Progressbar
+PHP-CLI - Progressbar
 
 Example usage:
 <pre>

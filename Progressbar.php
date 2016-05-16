@@ -24,7 +24,7 @@ class Progressbar {
     public function __construct($total)
     {
         if(!$total) {
-            throw new Exception ('Progressbar error: Total not set');
+            throw new \Exception ('Progressbar error: Total not set');
         }
         $this->total = $total;
     }

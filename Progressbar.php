@@ -50,8 +50,7 @@ class Progressbar {
         $this->bar .= str_repeat(" ", 100 - $this->perc) . "] - $this->perc% - $progress/$this->total";
         return $this->bar;
     }
-
-
+    
     public function updateBar($progress)
     {
         printf("%s\r",$this->makeBar($progress));

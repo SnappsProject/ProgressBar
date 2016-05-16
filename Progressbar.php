@@ -15,8 +15,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Developer by : Giacomo Failla - failla.giacomo@gmail.com
 */
+Namespace SnappsProject;
+
 class Progressbar {
-    
+
     private $total;
 
     public function __construct($total)
@@ -36,11 +38,11 @@ class Progressbar {
     {
         return $this->total;
     }
-    
+
     private function makeBar($progress)
     {
         if(!is_numeric($progress)) {
-            throw new Exception ('Progress bar error: Progress is not numeric');
+            throw new \Exception ('Progress bar error: Progress is not numeric');
         }
         $this->perc = round(($progress / $this->total) * 100,0);
         $this->bar  = "[" . str_repeat("=", $this->perc);
@@ -52,6 +54,11 @@ class Progressbar {
 
     public function updateBar($progress)
     {
-        printf("%s\r",$this->makeBar($progress));
+        if($progress == $this->total) {
+            printf("%s\r",$this->makeBar($progress));
+            printf("\n");
+        } else {
+            printf("%s\r",$this->makeBar($progress));
+        }
     }
 }

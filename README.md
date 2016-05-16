@@ -1,6 +1,5 @@
 # php-terminal-progress-bar
 Php - Terminal Progressbar 
-
 Example usage:
 <pre>
 require_once('Progressbar.php');

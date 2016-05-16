@@ -3,14 +3,13 @@ Php - Terminal Progressbar
 
 Example usage:
 <pre>
-<?php
-//Require File
-require('Progressbar.php');
-//Example 
+
+require_once('Progressbar.php');
+
 $total = 30; //total instrunctions
-$bar = new Progressbar($total);
+$bar = new SnappsProject\Progressbar($total);
 for ($n=1; $n <= $total; $n++) {
-  $bar->updateBar($n);    
+  $bar->updateBar($n);
   usleep(300000); //Emulates workload
 }
 

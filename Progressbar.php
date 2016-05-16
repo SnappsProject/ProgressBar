@@ -16,6 +16,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Developer by : Giacomo Failla - failla.giacomo@gmail.com
 */
 class Progressbar {
+    
+    private $total;
 
     public function __construct($total)
     {
